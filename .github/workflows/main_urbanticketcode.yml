@@ -46,10 +46,8 @@ jobs:
           name: node-app
 
       - name: 'Deploy to Azure Web App'
-        id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'UrbanTicketCode'
-          slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_862EDCAC99A44C22BBACE1CE5F073481 }}
           package: ./dist/app-test
