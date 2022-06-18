@@ -53,4 +53,4 @@ jobs:
           app-name: 'UrbanTicketCode'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_862EDCAC99A44C22BBACE1CE5F073481 }}
-          package: .
+          package: ./dist/app-test
